@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angel Vice Acebes Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: #e0f7ff;
+            background: linear-gradient(rgba(5,5,20,0.9), rgba(5,5,20,0.95)),
+            url("https://getwallpapers.com/wallpaper/full/7/d/c/1172966-free-download-developer-wallpaper-hd-2560x1440-cell-phone.jpg");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 60px;
+        }
+
+        nav h2 {
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100vh;
+            padding: 0 80px;
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+        }
+
+        .hero-text span {
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+
+        .hero-text h3 {
+            margin-top: 10px;
+            color: #ff00ff;
+            text-shadow: 0 0 10px #ff00ff;
+        }
+
+        .hero-text p {
+            margin-top: 15px;
+            max-width: 500px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            border: 2px solid #00f7ff;
+            color: #00f7ff;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #00f7ff;
+            color: black;
+            box-shadow: 0 0 20px #00f7ff;
+        }
+
+        .hero-img img {
+            width: 260px;
+            border-radius: 50%;
+            border: 3px solid #ff00ff;
+            box-shadow: 
+                0 0 20px #ff00ff,
+                0 0 40px #00f7ff;
+        }
+
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .card {
+            background: rgba(10,10,30,0.85);
+            border: 1px solid #00f7ff;
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00f7ff;
+        }
+
+        h2 {
+            color: #00f7ff;
+            text-shadow: 0 0 10px #00f7ff;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            background: rgba(255,255,255,0.05);
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ff00ff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px #ff00ff;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            background: #ff00ff;
+            color: black;
+            box-shadow: 0 0 15px #ff00ff;
+        }
+
+        #skill-description {
+            margin-top: 20px;
+            color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: black;
+            border-top: 1px solid #00f7ff;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Angel.</h2>
+    <div>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Angel Vice Acebes</span></h1>
+        <h3>Computer Technology Student</h3>
+
+        <p>
+            Hello! I am Angel Vice Acebes, a Computer Technology student passionate about web development and technology innovation.
+        </p>
+
+        <a href="https://web.facebook.com/angelvice.acebes" target="_blank" class="btn">
+            My Facebook
+        </a>
+    </div>
+
+    <div class="hero-img">
+        <img src="VISE.JPG.jpg" alt="Angel Vice Acebes">
+    </div>
+</div>
+
+<div class="section" id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am Angel Vice Acebes, a Computer Technology student who is interested in web development and technology. 
+            I am currently learning HTML and CSS and improving step by step while managing school and work.
+        </p>
+    </div>
+</div>
+
+<div class="section" id="skills">
+    <div class="card">
+        <h2>My Skills</h2>
+
+        <ul>
+            <li onclick="showSkill('html')">HTML & CSS</li>
+            <li onclick="showSkill('problem')">Problem Solving</li>
+            <li onclick="showSkill('adapt')">Adaptability</li>
+            <li onclick="showSkill('time')">Time Management</li>
+            <li onclick="showSkill('ethics')">Work Ethics</li>
+            <li onclick="showSkill('punctual')">Punctuality</li>
+            <li onclick="showSkill('communication')">Communication Skills</li>
+            <li onclick="showSkill('learn')">Willingness to Learn</li>
+            <li onclick="showSkill('emotion')">Emotional Intelligence</li>
+            <li onclick="showSkill('flex')">Flexibility</li>
+        </ul>
+
+        <p id="skill-description">Click a skill to see description.</p>
+    </div>
+</div>
+
+<div class="section" id="contact">
+    <div class="card">
+        <h2>Contact</h2>
+        <p>Email: abayacebes05@gmail.com</p>
+
+        <a href="https://web.facebook.com/angelvice.acebes" target="_blank" class="btn">
+            Message Me on Facebook
+        </a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Angel Vice Acebes</p>
+</footer>
+
+<script>
+function showSkill(skill) {
+    let description = "";
+
+    switch(skill) {
+        case "html":
+            description = "I can create simple web pages using HTML and design them using CSS.";
+            break;
+        case "problem":
+            description = "I analyze problems and find step-by-step solutions.";
+            break;
+        case "adapt":
+            description = "I can adjust to new situations and challenges easily.";
+            break;
+        case "time":
+            description = "I manage my time effectively as a working student.";
+            break;
+        case "ethics":
+            description = "I value honesty, responsibility, and dedication.";
+            break;
+        case "punctual":
+            description = "I make sure to meet deadlines and be on time.";
+            break;
+        case "communication":
+            description = "I communicate clearly and listen actively.";
+            break;
+        case "learn":
+            description = "I am always eager to learn new skills.";
+            break;
+        case "emotion":
+            description = "I understand and manage emotions respectfully.";
+            break;
+        case "flex":
+            description = "I can handle changes and different situations.";
+            break;
+    }
+
+    document.getElementById("skill-description").innerText = description;
+}
+</script>
+
+</body>
+</html>
